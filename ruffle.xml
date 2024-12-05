@@ -1,5 +1,5 @@
 <Module>
-<ModulePrefs title="Bloons Tower Defense 5"/>
+<ModulePrefs title="Ruffle"/>
 <Content type="html">
 <![CDATA[ <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloons TD 5</title>
+    <title>Ruffle</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
         window.onload = function() { // resize flash game to fit window
