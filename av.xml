@@ -19,7 +19,7 @@
         </div>
         <script>
             const url = new URLSearchParams(window.location.search);
-            const hash = "3fbe414701cd9d89e04b69d8533256773091897f";
+            const hash = "b60f389b39d4a34df869adc50bfce6f00fce3491";
             EJS_player = "#game";
             EJS_core = url.get('core');
             EJS_color = "#0064ff";
@@ -38,7 +38,7 @@
                 "version.json": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/version.json"
             };
         </script>
-        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@3fbe414701cd9d89e04b69d8533256773091897f/loader.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@b60f389b39d4a34df869adc50bfce6f00fce3491/loader.js"></script>
     </body>
 </html>
 ]]>
