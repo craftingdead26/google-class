@@ -10,16 +10,15 @@
     <title>Ruffle</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const swf = urlParams.get('swf');
+        document.getElementById("game").src = swf;
         window.onload = function() { // resize flash game to fit window
-            const urlParams = new URLSearchParams(window.location.search);
-            const swf = urlParams.get('swf');
             var game = document.getElementById("game");
             var width = window.innerWidth;
             var height = window.innerHeight;
             game.style.width = width + "px";
             game.style.height = height + "px";
-            game.src = swf;
-            alert(swf)
         }
     </script>
     <style>
