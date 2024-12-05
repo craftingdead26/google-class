@@ -38,7 +38,7 @@
                 "version.json": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/version.json"
             };
         </script>
-        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/loader.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@353c0083f05090d955f08e0f81821296233f4cdd/loader.js"></script>
     </body>
 </html>
 ]]>
