@@ -29,7 +29,7 @@
                 "emulator.min.css": "https://cdn.jsdelivr.net/gh/genizy/emu/emulator.min.css",
                 "emulator.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu/emulator.min.js",
                 "gamepad.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/gamepad.js",
-                "loader.js": "https://cdn.jsdelivr.net/gh/genizy/emu/loader.js",
+                "loader.js": "https://cdn.jsdelivr.net/gh/genizy/emu@32c4c3a8991305aee72ad8f1bbcc1439b757a94c/loader.js",
                 "nipplejs.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/nipplejs.js",
                 "shaders.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/shaders.js",
                 "socket.io.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/socket.io.min.js",
