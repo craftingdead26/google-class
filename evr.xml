@@ -20,12 +20,12 @@
         <script>
             const url = new URLSearchParams(window.location.search);
             const hash = "b60f389b39d4a34df869adc50bfce6f00fce3491";
-            var EJS_player = "#game";
-            var EJS_core = url.get('core');
-            var EJS_color = "#0064ff";
-            var EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/";
-            var EJS_gameUrl = url.get('emu');
-            var EJS_paths = {
+            window.EJS_player = "#game";
+            window.EJS_core = url.get('core');
+            window.EJS_color = "#0064ff";
+            window.EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/";
+            window.EJS_gameUrl = url.get('emu');
+            window.EJS_paths = {
                 "GameManager.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/GameManager.js",
                 "emulator.min.css": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/emulator.min.css",
                 "emulator.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/emulator.min.js",
