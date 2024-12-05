@@ -18,11 +18,12 @@
             <div id="game"></div>
         </div>
         <script>
+            const url = new URLSearchParams(window.location.search);
             EJS_player = "#game";
-            EJS_core = "3do";
+            EJS_core = url.get('core');
             EJS_color = "#0064ff";
             EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu/";
-            EJS_gameUrl = new URLSearchParams(window.location.search).get('emu');
+            EJS_gameUrl = url.get('emu');
         </script>
         <script src="https://cdn.jsdelivr.net/gh/genizy/emu/loader.js"></script>
     </body>
