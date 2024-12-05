@@ -19,6 +19,7 @@
             game.style.width = width + "px";
             game.style.height = height + "px";
             game.src = swf;
+            alert(swf)
         }
     </script>
     <style>
