@@ -1,0 +1,46 @@
+<Module>
+<ModulePrefs title="emu"/>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!--HTML file auto generated using EmulatorJS codehelper-->
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            const url = new URLSearchParams(window.location.search);
+            const hash = 20c6ae04f06bc2fad1f4fcc71b3f882f7daf9a6d;
+            EJS_player = "#game";
+            EJS_core = url.get('core');
+            EJS_color = "#0064ff";
+            EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/";
+            EJS_gameUrl = url.get('emu');
+            EJS_paths = {
+                "GameManager.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/GameManager.js",
+                "emulator.min.css": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/emulator.min.css",
+                "emulator.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/emulator.min.js",
+                "gamepad.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/gamepad.js",
+                "loader.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/loader.js",
+                "nipplejs.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/nipplejs.js",
+                "shaders.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/shaders.js",
+                "socket.io.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/socket.io.min.js",
+                "storage.js": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/src/storage.js",
+                "version.json": "https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/version.json"
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@"+hash+"/loader.js"></script>
+    </body>
+</html>
+]]>
+</Content>
+</Module>
