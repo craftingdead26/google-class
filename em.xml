@@ -1,0 +1,45 @@
+<Module>
+<ModulePrefs title="emu"/>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!--HTML file auto generated using EmulatorJS codehelper-->
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            const url = new URLSearchParams(window.location.search);
+            EJS_player = "#game";
+            EJS_core = url.get('core');
+            EJS_color = "#0064ff";
+            EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu/";
+            EJS_gameUrl = url.get('emu');
+            EJS_paths = {
+                "GameManager.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/GameManager.js",
+                "emulator.min.css": "https://cdn.jsdelivr.net/gh/genizy/emu/emulator.min.css",
+                "emulator.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu/emulator.min.js",
+                "gamepad.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/gamepad.js",
+                "loader.js": "https://cdn.jsdelivr.net/gh/genizy/emu/loader.js",
+                "nipplejs.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/nipplejs.js",
+                "shaders.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/shaders.js",
+                "socket.io.min.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/socket.io.min.js",
+                "storage.js": "https://cdn.jsdelivr.net/gh/genizy/emu/src/storage.js",
+                "version.json": "https://cdn.jsdelivr.net/gh/genizy/emu/version.json"
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/genizy/emu/loader.js"></script>
+    </body>
+</html>
+]]>
+</Content>
+</Module>
