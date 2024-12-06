@@ -37,7 +37,7 @@ window.eaglercraftXOptsHints = {
 <style id="eaglercraftXClientSignature"></style>
 <style id="eaglercraftXClientBundle"></style>
 <script>
-    fetch("https://cdn.jsdelivr.net/gh/genizy/google-class/bin/eaglercraftXClientSignature.bin")
+    fetch("https://cdn.jsdelivr.net/gh/genizy/google-class/bin/eaglercraftXClientSignature.txt")
         .then(response => response.text())
         .then(base64Data => {
             const styleTag = document.getElementById('eaglercraftXClientSignature');
@@ -46,7 +46,7 @@ window.eaglercraftXOptsHints = {
         })
         .catch(err => console.error('Failed to load the signature file:', err));
 
-	fetch("https://cdn.jsdelivr.net/gh/genizy/google-class/bin/eaglercraftXClientBundle.bin")
+	fetch("https://cdn.jsdelivr.net/gh/genizy/google-class/bin/eaglercraftXClientBundle.txt")
         .then(response => response.text())
         .then(base64Data => {
             const styleTag = document.getElementById('eaglercraftXClientBundle');
