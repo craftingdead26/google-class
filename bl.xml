@@ -52,7 +52,7 @@
         updateBannerVisibility();
       }
 	 
-      var buildUrl = "Build";
+      var buildUrl = "https://cdn.jsdelivr.net/gh/tuhyaoc/bl@main/Build";
       var loaderUrl = buildUrl + "/BlockBlast1.1-8.loader.js";
       var config = {
         dataUrl: buildUrl + "/BlockBlast1.1-8.data.unityweb",
