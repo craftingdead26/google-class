@@ -25,7 +25,7 @@
             EJS_pathtodata = "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS/data/";
             EJS_gameUrl = "https://cdn.jsdelivr.net/gh/mehransab101/GBC_ROMS@master/Pokemon%20-%20Crystal%20Version%20%28UE%29%20%28V1.1%29%20%5BC%5D%5B%21%5D.gbc";
         </script>
-        <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS/data/loader.js></script>
+        <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS/data/loader.js"></script>
     </body>
 </html>
 ]]>
