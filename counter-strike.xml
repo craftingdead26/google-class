@@ -44,7 +44,7 @@
  	</div>
  	<script>
  	const hideFullScreenButton = "";
- 	const buildUrl = "https://cdn.jsdelivr.net/gh/co6cohad/fg6@main/Build/";
+ 	const buildUrl = "https://cdn.jsdelivr.net/gh/co6cohad/fg6@main/Build";
  	const loaderUrl = buildUrl + "/webgl.loader.js";
  	const config = {
  		dataUrl: buildUrl + "/686ca15cb73e415ffc47df163c1537bf.data.unityweb",
