@@ -10,7 +10,7 @@
     <title>Subway Surfers</title>
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers/img/FirstAvatar.png">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class@e8b6db3d51c2378de04372bbdc38d642408565c7/subway-surfers/4399.z.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class@a71ceefd192febf0244977f06093a353577feb8b/subway-surfers/4399.z.js"></script>
     <script>
       window.config = {
         loader: "unity",
@@ -21,7 +21,7 @@
         title: "Subway Surfers: San Francisco",
 
         unityVersion: "2019.4.18f1",
-        unityWebglBuildUrl: "https://cdn.jsdelivr.net/gh/genizy/google-class@e8b6db3d51c2378de04372bbdc38d642408565c7/subway-surfers/Build/SanFrancisco.json",
+        unityWebglBuildUrl: "https://cdn.jsdelivr.net/gh/genizy/google-class@a71ceefd192febf0244977f06093a353577feb8b/subway-surfers/Build/SanFrancisco.json",
 
         fileSize: 35,
         cachedDecompressedFileSizes: {
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@e8b6db3d51c2378de04372bbdc38d642408565c7/subway-surfers/master-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@a71ceefd192febf0244977f06093a353577feb8b/subway-surfers/master-loader.js"></script>
   </body>
 </html>
 ]]>
