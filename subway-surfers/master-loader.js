@@ -14,10 +14,10 @@ if (!window.config.unityWebglLoaderUrl) {
     var versionSplit = window.config.unityVersion ? window.config.unityVersion.split(".") : [],
         year = versionSplit[0],
         minor = versionSplit[1];
-    window.config.unityWebglLoaderUrl = "https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers/UnityLoader.2019.2.js";
+    window.config.unityWebglLoaderUrl = "https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers@14d85a3924a9566b90d5c555341fef6615551d79/UnityLoader.2019.2.js";
 }
 var sdkScript = document.createElement("script");
-sdkScript.src = "https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers/poki-sdk.js", sdkScript.onload = function() {
+sdkScript.src = "https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers@14d85a3924a9566b90d5c555341fef6615551d79/poki-sdk.js", sdkScript.onload = function() {
     var i = document.createElement("script");
     i.src = root + loader, document.body.appendChild(i)
 }, document.body.appendChild(sdkScript);
