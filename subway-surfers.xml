@@ -10,7 +10,7 @@
     <title>Subway Surfers</title>
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers/img/FirstAvatar.png">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers@14d85a3924a9566b90d5c555341fef6615551d79/4399.z.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class@14d85a3924a9566b90d5c555341fef6615551d79/subway-surfers/4399.z.js"></script>
     <script>
       window.config = {
         loader: "unity",
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class/subway-surfers@14d85a3924a9566b90d5c555341fef6615551d79/master-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@14d85a3924a9566b90d5c555341fef6615551d79/subway-surfers/master-loader.js"></script>
   </body>
 </html>
 ]]>
