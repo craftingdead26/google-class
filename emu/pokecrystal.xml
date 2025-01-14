@@ -18,14 +18,14 @@
         </div>
         <script>
             EJS_player = "#game";
-            EJS_core = "gb";
+            EJS_core = "gba";
             EJS_gameName = "Pokemon - Crystal Version";
             EJS_color = "#0064ff";
             EJS_startOnLoaded = true;
-            EJS_pathtodata = "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS/data/";
-            EJS_gameUrl = "https://cdn.jsdelivr.net/gh/mehransab101/GBC_ROMS@master/Pokemon%20-%20Crystal%20Version%20%28UE%29%20%28V1.1%29%20%5BC%5D%5B%21%5D.gbc";
+            EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
+            EJS_gameUrl = "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@13a9d8a407ade461b08ed56b0a683f22ae1aef96/Pokemon%20-%20Crystal%20Version%20(USA).zip";
         </script>
-        <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS/data/loader.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/loader.js"></script>
     </body>
 </html>
 ]]>
