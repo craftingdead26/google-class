@@ -3,9 +3,8 @@
 <Content type="html">
 <![CDATA[
 <!DOCTYPE HTML>
-  <html>
+<html>
     <head>
-        <!--HTML file auto generated using EmulatorJS codehelper-->
         <style>
             body, html {
                 margin: 0;
@@ -43,18 +42,14 @@
             EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
             EJS_core = `${new URLSearchParams(window.location.search).get('core')}`;
             EJS_gameUrl = `${new URLSearchParams(window.location.search).get('emu')}`;
-              const checkEmulatorLoaded = () => {
-                if (typeof EJS_ready !== "undefined" && EJS_ready) {
-                    document.getElementById("loadingScreen").remove();
-                } else {
-                    setTimeout(checkEmulatorLoaded, 100);
-                }
-            };
-            checkEmulatorLoaded();
+            EJS_onGameStart = function(e) {
+                document.getElementById("loadingScreen").remove();
+            }
         </script>
         <script src="https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/loader.js"></script>
     </body>
 </html>
+
 ]]>
 </Content>
 </Module>
