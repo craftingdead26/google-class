@@ -18,14 +18,13 @@
             <div id="game"></div>
         </div>
         <script>
-            const url = new URLSearchParams(window.location.search);
             EJS_player = "#game";
-            EJS_core = `${url.get('core')}`;
             EJS_gameName = "URL Specified Game";
             EJS_color = "#0064ff";
             EJS_startOnLoaded = true;
             EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
-            EJS_gameUrl = `${url.get('url')}`;
+            EJS_core = `${new URLSearchParams(window.location.search).get('core')}`;
+            EJS_gameUrl = `${new URLSearchParams(window.location.search).get('url')}`;
         </script>
         <script src="https://cdn.jsdelivr.net/gh/genizy/emu@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/loader.js"></script>
     </body>
