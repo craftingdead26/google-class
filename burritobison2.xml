@@ -3,27 +3,27 @@
 <Content type="html">
 <![CDATA[ 
 <head>
-<style type="text/css">#button {
-   display:none;
-   }
-   .imgb_vis {
-   animation: imgb-animation 7s linear;
-   }
-   @keyframes imgb-animation {
-   10% {
-   transform: translateX(0);
-   }
-   20% {
-   transform: translateX(100px);
-   }
-   90% {
-   transform: translateX(100px);
-   }
-   100% {
-   transform: translateX(0);
-   }
-   }
-</style>
+   <style type="text/css">#button {
+      display:none;
+      }
+      .imgb_vis {
+      animation: imgb-animation 7s linear;
+      }
+      @keyframes imgb-animation {
+      10% {
+      transform: translateX(0);
+      }
+      20% {
+      transform: translateX(100px);
+      }
+      90% {
+      transform: translateX(100px);
+      }
+      100% {
+      transform: translateX(0);
+      }
+      }
+   </style>
 </head>
 <body dir="ltr">
    <script src="https://cdn.jsdelivr.net/gh/mountain658/BurritoBison@847c40b3aeee020afd4ffffacb65e36404e5a9de/UnityProgress.js"></script>
@@ -31,7 +31,32 @@
    <script src="https://cdn.jsdelivr.net/gh/mountain658/BurritoBison@847c40b3aeee020afd4ffffacb65e36404e5a9de/burrito-bison-ll.js"></script>
    <script src="https://cdn.jsdelivr.net/gh/arwds/Arowadas@7be59f866ec50056109ed7a4b2a227a5f0494025/terminal/games/burrito-bison/Build/UnityLoader.js"></script>
    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/mountain658/BurritoBison@847c40b3aeee020afd4ffffacb65e36404e5a9de/burrito-bison-ll.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+   var url = "%68%74%74%70%73%3a%2f%2f%72%61%77%63%64%6e%2e%67%69%74%68%61%63%6b%2e%63%6f%6d%2f%6d%6f%75%6e%74%61%69%6e%36%35%38%2f%42%75%72%72%69%74%6f%42%69%73%6f%6e%2f%38%34%37%63%34%30%62%33%61%65%65%65%30%32%30%61%66%64%34%66%66%66%66%61%63%62%36%35%65%33%36%34%30%34%65%35%61%39%64%65%2f";
+      var gameInstance = UnityLoader.instantiate("gameContainer", {
+  "companyName": "Juicy Beast Studio",
+  "productName": "Burrito Bison",
+  "dataUrl": decodeURIComponent(url)+"burrito-bison-ll.data.unityweb",
+  "asmCodeUrl": decodeURIComponent(url)+"burrito-bison-ll.asm.code.unityweb",
+  "asmMemoryUrl": decodeURIComponent(url)+"burrito-bison-ll.asm.memory.unityweb",
+  "asmFrameworkUrl": decodeURIComponent(url)+"burrito-bison-ll.asm.framework.unityweb",
+  "TOTAL_MEMORY": 536870912,
+  "graphicsAPI": [
+    "WebGL 2.0",
+    "WebGL 1.0"
+  ],
+  "webglContextAttributes": {
+    "preserveDrawingBuffer": false
+  },
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#000000"
+}, {
+  onProgress: UnityProgress,
+  Module: {
+    onRuntimeInitialized: function() {
+      UnityProgress(gameInstance, "complete")
+    }
+  }
+});
    </script>
    <div class="webgl-content">
       <div id="gameContainer" style="width: 100vw; height: 100vh; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);">
