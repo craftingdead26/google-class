@@ -18,7 +18,7 @@
         title: "Subway Surfers: San Francisco",
 
         unityVersion: "2019.4.18f1",
-        unityWebglBuildUrl: "https://cdn.jsdelivr.net/gh/genizy/google-class@24ca7d3d305535d233708c40d0e95c7403dac3c6/subway-surfers/Build/SanFrancisco.json",
+        unityWebglBuildUrl: "https://cdn.jsdelivr.net/gh/genizy/google-class@24ca7d3d305535d233708c40d0e95c7403dac3c6/subway-surfers@7df18e3dc376c5c1d7699da4562a6265ae859685/Build/SanFrancisco.json",
 
         fileSize: 35,
         cachedDecompressedFileSizes: {
