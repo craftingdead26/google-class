@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Subway Surfers</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class@dfc413e74b120e8380bccc3cf322fb08738b0521/subway-surfers/4399.z.js"></script>
     <script>
       window.config = {
         loader: "unity",
@@ -34,7 +35,7 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@24ca7d3d305535d233708c40d0e95c7403dac3c6/subway-surfers/master-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@dfc413e74b120e8380bccc3cf322fb08738b0521/subway-surfers/master-loader.js"></script>
   </body>
 </html>
 ]]>
