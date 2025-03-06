@@ -6,9 +6,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <base href="https://cdn.jsdelivr.net/gh/genizy/google-class@98ca4cbe31442f57b8ebd05e85254f01a01b49a3/subway-surfers/">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Subway Surfers</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/google-class@b758211d39996d4d9f7b4ed9a73e5abdca424b7a/subway-surfers/4399.z.js"></script>
+    <link rel="icon" href="img/FirstAvatar.png">
+
+    <script type="text/javascript" src="4399.z.js"></script>
     <script>
       window.config = {
         loader: "unity",
@@ -19,7 +22,7 @@
         title: "Subway Surfers: San Francisco",
 
         unityVersion: "2019.4.18f1",
-        unityWebglBuildUrl: "https://cdn.jsdelivr.net/gh/genizy/google-class@b758211d39996d4d9f7b4ed9a73e5abdca424b7a/subway-surfers/Build/SanFrancisco.json",
+        unityWebglBuildUrl: "Build/SanFrancisco.json",
 
         fileSize: 35,
         cachedDecompressedFileSizes: {
@@ -35,9 +38,10 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/gh/genizy/google-class@b758211d39996d4d9f7b4ed9a73e5abdca424b7a/subway-surfers/master-loader.js"></script>
+    <script src="master-loader.js"></script>
   </body>
 </html>
+
 ]]>
 </Content>
 </Module>

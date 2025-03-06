@@ -103,7 +103,7 @@
   var t,
     i = ((t = window.pokiSDKVersion) || (t = e("ab") || "v2.234.2"), "poki-sdk-" + (n ? "kids" : "core") + "-" + t + ".js"),
     r = document.createElement("script");
-  r.setAttribute("src", 'https://cdn.jsdelivr.net/gh/genizy/google-class@14d85a3924a9566b90d5c555341fef6615551d79/subway-surfers/poki-sdk-core-v2.234.2.js'),
+  r.setAttribute("src", i),
     r.setAttribute("type", "text/javascript"),
     r.setAttribute("crossOrigin", "anonymous"),
     (r.onload = function () {
