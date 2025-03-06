@@ -415,7 +415,7 @@ function UTF8ArrayToString(heapOrArray, idx, maxBytesToRead) {
  var endPtr = idx;
  while (heapOrArray[endPtr] && !(endPtr >= endIdx)) ++endPtr;
  if (endPtr - idx > 16 && heapOrArray.buffer && UTF8Decoder) {
-  return UTF8Decoder.decode(heapOrArray.buffer instanceof SharedArrayBuffer ? heapOrArray.slice(idx, endPtr) : heapOrArray.subarray(idx, endPtr));
+  return UTF8Decoder.decode(heapOrArray.buffer instanceof ArrayBuffer ? heapOrArray.slice(idx, endPtr) : heapOrArray.subarray(idx, endPtr));
  }
  var str = "";
  while (idx < endPtr) {
@@ -550,8 +550,8 @@ if (ENVIRONMENT_IS_PTHREAD) {
    "maximum": 2147483648 / 65536,
    "shared": true
   });
-  if (!(wasmMemory.buffer instanceof SharedArrayBuffer)) {
-   err("requested a shared WebAssembly.Memory but the returned buffer is not a SharedArrayBuffer, indicating that while the browser has SharedArrayBuffer it does not have WebAssembly threads support - you may need to set a flag");
+  if (!(wasmMemory.buffer instanceof ArrayBuffer)) {
+   err("requested a shared WebAssembly.Memory but the returned buffer is not a ArrayBuffer, indicating that while the browser has ArrayBuffer it does not have WebAssembly threads support - you may need to set a flag");
    if (ENVIRONMENT_IS_NODE) {
     console.log("(on node you may need: --experimental-wasm-threads --experimental-wasm-bulk-memory and also use a recent version)");
    }
@@ -4077,8 +4077,8 @@ function pthreadCreateProxied(pthread_ptr, attr, start_routine, arg) {
 }
 
 function ___pthread_create_js(pthread_ptr, attr, start_routine, arg) {
- if (typeof SharedArrayBuffer == "undefined") {
-  err("Current environment does not support SharedArrayBuffer, pthreads are not available!");
+ if (typeof ArrayBuffer == "undefined") {
+  err("Current environment does not support ArrayBuffer, pthreads are not available!");
   return 6;
  }
  var transferList = [];
@@ -4540,7 +4540,7 @@ var SOCKFS = {
     buffer = buffer.buffer;
    }
    var data;
-   if (buffer instanceof SharedArrayBuffer) {
+   if (buffer instanceof ArrayBuffer) {
     data = new Uint8Array(new Uint8Array(buffer.slice(offset, offset + length))).buffer;
    } else {
     data = buffer.slice(offset, offset + length);
@@ -13715,10 +13715,10 @@ const Features = { // eslint-disable-line no-unused-vars
    * Check whether SharedBufferArray is available.
    *
    * Most browsers require the page to be running in a secure context, and the
-   * the server to provide specific CORS headers for SharedArrayBuffer to be available.
+   * the server to provide specific CORS headers for ArrayBuffer to be available.
    *
-   * @returns {boolean} If SharedArrayBuffer is available.
-   * @function Engine.isSharedArrayBufferAvailable
+   * @returns {boolean} If ArrayBuffer is available.
+   * @function Engine.isArrayBufferAvailable
    */
   isSharedArrayBufferAvailable: function () {
     return false;
