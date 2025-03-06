@@ -13721,7 +13721,7 @@ const Features = { // eslint-disable-line no-unused-vars
    * @function Engine.isSharedArrayBufferAvailable
    */
   isSharedArrayBufferAvailable: function () {
-    return 'SharedArrayBuffer' in window;
+    return false;
   },
 
   /**
