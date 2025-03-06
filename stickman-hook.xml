@@ -1,0 +1,167 @@
+<Module>
+<ModulePrefs title="Stickman Hook"/>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <base href="https://cdn.jsdelivr.net/gh/genizy/google-class/stickman-hook/">
+  <title>Stick Hook</title>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <link rel="stylesheet" href="TemplateData/style.css">
+</head>
+
+<body class="dark">
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+  <div id="loading-cover" style="display:none;">
+    <div style="position: absolute; bottom: 10px; right: 10px; font-size: 18px; color: #ffffff; opacity: 0.5;">
+      2410253</div>
+    <div id="unity-loading-bar">
+      <img src="image/loading.png?v=1" id="bg" style="width: 100%; height: 100%;object-fit: cover;" alt="background">
+      <canvas id="logo-canvas" style="position: absolute; background-color: transparent;">
+        <img src="image/loading_bg.png" id="ld_bar" alt="bg">
+        <img src="image/loading_mask.png" id="ld_mask" alt="mask">
+        <img src="image/loading_fill.png" id="ld_fill" alt="fill">
+        <img src="image/loading_text.png" id="ld_loading_text" alt="text">
+        <img src="image/logo.png" id="ld_logo" alt="logo">
+      </canvas>
+    </div>
+  </div>
+
+  <script>
+    const container = document.querySelector("#unity-container");
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingCover = document.querySelector("#loading-cover");
+    const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
+    const buildUrl = "Build";
+    const loaderUrl = buildUrl + "/2410253.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/2410253.data.unityweb",
+      frameworkUrl: buildUrl + "/2410253.framework.js.unityweb",
+      codeUrl: buildUrl + "/2410253.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "1games.io",
+      productName: "Stick Hook",
+      productVersion: "2410253",
+    };
+
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      config.devicePixelRatio = 1;
+    }
+
+    loadingCover.style.display = "";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        drawCanvas(progress);
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        setTimeout(() => {
+          loadingCover.style.display = "none";
+          logo_loaded = true;
+        }, 2000);
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    var logo_loaded = false;
+    var logo_loading_percent = 0;
+
+    window.onresize = () => {
+      drawCanvas(logo_loading_percent);
+    }
+    window.onload = () => {
+      drawCanvas(logo_loading_percent);
+    }
+
+    var logo_canvas = document.getElementById("logo-canvas");
+    function drawCanvas(_percent = 0) {
+      if (logo_loaded) {
+        return;
+      }
+      resizeLogoCanvas();
+      var ctx = logo_canvas.getContext("2d");
+      var ld_bar = document.getElementById("ld_bar");
+      var ld_mask = document.getElementById("ld_mask");
+      var ld_fill = document.getElementById("ld_fill");
+      var ld_loading_text = document.getElementById("ld_loading_text");
+      var ld_logo = document.getElementById("ld_logo");
+      var _sw = logo_canvas.width / 1920;
+      var _sh = logo_canvas.height / 1080;
+
+      if (_percent > 1) {
+        _percent = 1;
+      }
+      var maskbar_W = 1100;
+
+      var _fl1 = ((1920 - maskbar_W) / 2) + _percent * maskbar_W;
+      var _fw = maskbar_W - _percent * maskbar_W;
+      ctx.drawImage(ld_bar, 408 * _sw, logo_canvas.height - (113 * _sh), 1102 * _sw, 44 * _sh);
+      ctx.drawImage(ld_fill, _fl1 * _sw, logo_canvas.height - (113 * _sh), _fw * _sw, 47 * _sh);
+      ctx.drawImage(ld_mask, 396 * _sw, logo_canvas.height - (120 * _sh), 1127 * _sw, 63 * _sh);
+      ctx.drawImage(ld_loading_text, 846 * _sw, logo_canvas.height - (170 * _sh), 228 * _sw, 37 * _sh);
+      ctx.drawImage(ld_logo, 728 * _sw, logo_canvas.height - (1000 * _sh), 464 * _sw, 585 * _sh);
+    }
+    function resizeLogoCanvas() {
+      var _w = window.innerWidth;
+      var _h = window.innerHeight;
+      var _nw = _h * 16 / 9;
+      if (_nw <= _w) {
+        logo_canvas.width = _nw;
+        logo_canvas.height = _h;
+      }
+      else {
+        logo_canvas.width = _w;
+        logo_canvas.height = _w * 9 / 16;
+      }
+    }
+
+
+    document.body.appendChild(script);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics-compat.js"></script>
+
+
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCnDLWCs3tyvYiSUACeX9v7XZ52gn2H76I",
+      authDomain: "stick-hook.firebaseapp.com",
+      projectId: "stick-hook",
+      storageBucket: "stick-hook.appspot.com",
+      messagingSenderId: "430579088872",
+      appId: "1:430579088872:web:9425fceed75dd56083f85d",
+      measurementId: "G-D88TQ758TH"
+    };
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); }
+    window.gtag("config", firebaseConfig.measurementId, {
+      cookie_domain: window.location.hostname,
+      cookie_flags: "SameSite=None;Secure",
+    });
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"91be63c59e37eb2a","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.1.0","token":"2b96e6c69cb44200a90fd32a8c45cada"}' crossorigin="anonymous"></script>
+</body>
+</html>
+]]>
+</Content>
+</Module>
