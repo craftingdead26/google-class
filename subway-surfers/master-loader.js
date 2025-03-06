@@ -17,7 +17,7 @@ if (!window.config.unityWebglLoaderUrl) {
     window.config.unityWebglLoaderUrl = "https://cdn.jsdelivr.net/gh/genizy/google-class@1fcbc19db198e378b4fd268bc5970b8f48b2adf8/subway-surfers/UnityLoader.2019.2.js";
 }
 var sdkScript = document.createElement("script");
-sdkScript.src = "https://cdn.jsdelivr.net/gh/genizy/google-class@1fcbc19db198e378b4fd268bc5970b8f48b2adf8/subway-surfers/poki-sdk.js", sdkScript.onload = function() {
+sdkScript.src = "https://cdn.jsdelivr.net/gh/genizy/google-class@9cf7f14bb6bae58188298906412fc20bd9bfadbf/subway-surfers/poki-sdk.js", sdkScript.onload = function() {
     var i = document.createElement("script");
     i.src = root + loader, document.body.appendChild(i)
 }, document.body.appendChild(sdkScript);
