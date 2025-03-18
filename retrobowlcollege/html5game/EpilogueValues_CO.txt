@@ -3809,7 +3809,7 @@ epilogue_country	24	Brunei
 epilogue_country	25	Bulgaria
 epilogue_country	26	Burkina Faso
 epilogue_country	27	Burundi
-epilogue_country	28	Côte d'Ivoire
+epilogue_country	28	CÃ´te d'Ivoire
 epilogue_country	29	Cabo Verde
 epilogue_country	30	Cambodia
 epilogue_country	31	Cameroon
@@ -4616,7 +4616,7 @@ epilogue_subject	345	Visual Arts
 epilogue_subject	346	Webpage Design
 epilogue_subject	347	Welding Technology
 epilogue_subject	348	Wildlife Management
-epilogue_subject	349	Women’s Studies
+epilogue_subject	349	Womenâ€™s Studies
 epilogue_subject	350	Writing 
 epilogue_subject	351	Yiddish Studies
 epilogue_subject	352	Zoology
@@ -4693,7 +4693,7 @@ epilogue_job	51	construction site engineer
 epilogue_job	52	copy editor
 epilogue_job	53	coroner
 epilogue_job	54	cosmetics creator
-epilogue_job	55	crèche assistant
+epilogue_job	55	crÃ¨che assistant
 epilogue_job	56	customer service team manager
 epilogue_job	57	cyber security expert
 epilogue_job	58	dancer
@@ -4895,7 +4895,7 @@ epilogue_smallbusiness	13	costume rental store
 epilogue_smallbusiness	14	laser tag arena
 epilogue_smallbusiness	15	martial arts dojo
 epilogue_smallbusiness	16	mobile pet grooming service
-epilogue_smallbusiness	17	poetry café
+epilogue_smallbusiness	17	poetry cafÃ©
 epilogue_smallbusiness	18	sailing school
 epilogue_smallbusiness	19	surf school
 epilogue_circusjob	0	clown
