@@ -348,7 +348,7 @@ uid	Subject	Unspecified	HBU	Ivy	Military	Religious	Unknown
 346	Webpage Design	1	1	0	1	1	0
 347	Welding Technology	1	1	0	1	1	0
 348	Wildlife Management	1	1	0	1	1	0
-349	Women’s Studies	1	1	1	1	0	0
+349	Womenâ€™s Studies	1	1	1	1	0	0
 350	Writing 	1	1	1	1	1	1
 351	Yiddish Studies	1	0	1	1	0	0
 352	Zoology	1	1	1	1	0	0

@@ -1446,7 +1446,7 @@ uid	city	state
 1444	Windsor	CT
 1445	Winsted	CT
 1446	Winston Salem	NC
-1447	Winston–Salem	NC
+1447	Winstonâ€“Salem	NC
 1448	Winter Haven	FL
 1449	Winter Park	FL
 1450	Woburn	MA
