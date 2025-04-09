@@ -816,13 +816,7 @@ function createWasm() {
     }
     function instantiateAsync() {
         if (!wasmBinary && typeof WebAssembly.instantiateStreaming === "function" && !isDataURI(wasmBinaryFile) && typeof fetch === "function") {
-            fetch(wasmBinaryFile, {
-                credentials: "same-origin",
-                mode: "cors",
-                headers: {
-                    "Content-Type": "application/wasm"
-                }
-            }).then(function(response) {
+            fetch(wasmBinaryFile).then(function(response) {
                 var result = WebAssembly.instantiateStreaming(response, info);
                 return result.then(receiveInstantiatedSource, function(reason) {
                     err("wasm streaming compile failed: " + reason);
