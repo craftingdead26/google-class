@@ -1008,7 +1008,6 @@
                     return x % y
                 }),
                 "debugger": (function () {
-                    debugger
                 })
             },
             "parent": Module
