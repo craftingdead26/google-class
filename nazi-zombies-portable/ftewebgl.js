@@ -114,7 +114,11 @@ if (typeof Module["files"] !== "undefined" && Object.keys(Module["files"]).lengt
         }
     }
 } else if (!Module["manifest"]) {
-    let man = "https://cdn.jsdelivr.net/gh/genizy/google-class@70cf6146126d7f0551eb16899a5d4081a0544177/nazi-zombies-portable/default.fmf";
+    let man = "https://cdn.jsdelivr.net/gh/genizy/google-class@70cf6146126d7f0551eb16899a5d4081a0544177/nazi-zombies-portable/";
+    if (man.substr(-1) != "/")
+        man += ".fmf";
+    else
+        man += "index.fmf";
     Module["manifest"] = man;
     if (window.location.hash != "")
         Module["manifest"] = window.location.hash.substring(1)
