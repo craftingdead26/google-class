@@ -223,9 +223,6 @@ Module.preRun = Module.preRun || [ ];
     }
 
     // Clear error when running without a server.
-    if (location.href.startsWith('file://')) {
-        reportError("This browser requires the game to be run from a web server (i.e. double-clicking on index.html won't work).");
-    }
 
 
     /***************************************************************************
