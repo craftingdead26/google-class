@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<base href="https://rawcdn.githack.com/genizy/google-class/main/">
+		<base href="https://rawcdn.githack.com/genizy/google-class/main/crazycattle3d">
+		<style>
+  html, body {
+    margin: 0;
+    overflow: hidden;
+    touch-action: none;
+  }
+</style>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>CrazyCattle3D</title>
@@ -217,6 +225,24 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
+		<script>
+  document.addEventListener("touchstart", function(e) {
+    if (e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("gesturestart", function(e) {
+    e.preventDefault();
+  });
+  window.addEventListener("touchmove", function(e) {
+    if (e.touches[0].clientY < 50) e.preventDefault();
+  }, { passive: false });
+
+  window.addEventListener("beforeunload", function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+  });
+</script>
+
 	</body>
 </html>
 
